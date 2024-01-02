@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+            background-image: url(./shopping.png);
+            background-size: cover;
+            
+        }
+        fieldset{
+            margin-top: 70px;
+            width: 50%;
+            background:transparent;
+
+            box-shadow: 5PX 5PX 20PX 1PX 10PX rgb(85,85,85);
+            color: white;
+            height: 430px;
+            border-radius: 10px;
+        }
+        td{
+            letter-spacing: 1px;
+        }
+        h1{
+            font-family: sans-serif;
+            letter-spacing: 3px;
+            text-align: center;
+            color: white;
+        }
+        hr{
+            border-radius: 5px solid white;
+            border-radius:10px;
+            width: 40%;
+        }
+        ul li{margin-left: 20px; color: white;}
+        #submit{
+            padding: 15px;
+            margin: 20px 35px;
+            color:white;
+            background:transparent;
+            width: 80%;
+            font-size:17px ;
+            border-radius: 30px;
+            border: 1px solid white;
+
+        }
+        #submit:hover{
+            color:black;
+            background-color: brown;
+            
+        }
+        input{
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: 1px solid white;
+            color: white;
+            width: 100%;
+        }
+        
+    </style>
+    <center>
+        
+        <fieldset>
+            <form>
+                <h1>Demmander</h1>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Nom et prénon:</td><td><input type="text" name="name" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>ville</td><td><input type="text" name="name" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>N° téléphone</td><td><input type="text" name="name" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Adresse</td><td><input type="text" name="name" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Type paiment</td><td><input type="text" name="name" value=""><br><br></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" id="submit" name="" value="Demmander" ></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </center>
+</body>
+</html>

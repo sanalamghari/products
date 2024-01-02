@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./acceil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body onclick="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="./other.png" alt="" id="slideIma">
+        </div>
+        <div class="overlay">
+             <div class="navbar">
+                <div class="logo">
+                     <a href="./index.html"><img src="./logo.jpg" alt=""></a>
+                </div>
+                <div class="menu-icon">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-regular fa-cart-shopping"></i>
+                </div>
+             </div>
+             <div class="content">
+                <h2>Comercialisation des trikot</h2>
+                <h3>avec fleiriko</h3>
+             </div>
+             <div class="btn">
+                <button type="button"><a href="./index.html">watch more</a></button>
+                <button type="button" class="btn-2">Subscribe</button>
+             </div>
+        </div>
+        
+    </div>
+    <div class="part2">
+    <div class="slider2">
+        <div class="title">
+            Toutes les models
+        </div>
+        <div class="from left">
+           
+
+           
+
+              <div class="item">
+                <div class="content2">
+                  <img src="./im17.png" alt="">
+                   <div class="des">
+                        <div> Fleur Stéréo </div>
+                        <button><a href="./lexela.html">more</a></button>
+                    </div>    
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="content2">
+                  <img src="./im18.png" alt="">
+                   <div class="des">
+                        <div>Fleuri Cardigan</div>
+                        <button>more</button>
+                    </div>    
+                </div>
+              </div>
+              <div class="item">
+                <div class="content2">
+                  <img src="./im19.png" alt="">
+                   <div class="des">
+                        <div> Fleur Stéréo</div>
+                        <button><a href="./lexela.html">more</a></button>
+                    </div>    
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="content2">
+                  <img src="./im20.png" alt="">
+                   <div class="des">
+                        <div> Fleur Stéréo</div>
+                        <button><a href="./lexela.html">more</a></button>
+                    </div>    
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="content2">
+                  <img src="./im21.png" alt="">
+                   <div class="des">
+                        <div>Fleuri Cardigan</div>
+                        <button><a href="./lexela.html">more</a></button>
+                    </div>    
+                </div>
+              </div>
+              <div class="item">
+                <div class="content2">
+                  <img src="./possi5.png" alt="">
+                   <div class="des">
+                        <div>Cardigan bordé</div>
+                        <button><a href="./lexela.html">more</a></button>
+                    </div>    
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="content2">
+                  <img src="./possi3.png" alt="">
+                   <div class="des">
+                        <div> Fleur Stéréo</div>
+                        <button><a href="./lexela.html">more</a></button>
+                    </div>    
+                </div>
+              </div>  
+        </div>
+    </div>
+</div>
+    <script>
+        var slideIma =document.getElementById("slideIma");
+
+        var images = new Array(
+            "./det.png",
+            "./other.png",
+            "./yarab.png",
+            "./im13.png" ,
+            "./possi2.png",
+            "./im12.png",
+            "./possi3.png",
+
+        )
+
+        var len =images.length;
+        var i= 0;
+        function slider(){
+            if(i > len-1){
+                i=0;
+            }
+            slideIma.src=images[i];
+            i++;
+            setTimeout(slider(),3000)
+        }
+    </script>
+</body>
+</html>
